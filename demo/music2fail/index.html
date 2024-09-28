@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Music2Fail: Transfer Music to Failed Recorder Style</title>
+    <style>
+        red {
+            color: red;
+        }
+
+        audio {
+            width: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        /* td, th {
+            border: 0px solid black;
+            padding: 8px;
+        } */
+        tr.row1 th {
+            border-bottom: 3px solid black; /* 在第1行下方加入粗的分隔線 */
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Music2Fail: Transfer Music to Failed Recorder Style</h1>
+        </header>
+    </article>
+
+    <!--    <p><b>Paper:</b> <a href="">arXiv</a></p>-->
+    <!--    <p><b>Authors</b>: </p>-->
+
+    <div>
+        <b>Abstract:</b>
+        The goal of music style transfer is to convert a music performance by one instrument into another while keeping the musical contents unchanged. In this paper, we investigate another style transfer scenario called ''failed-music style transfer''. Unlike the usual music style transfer where the content remains the same and only the instrumental characteristics are changed, this scenario seeks to transfer the music from the source instrument to the target instrument, with deliberately performed off-pitch. Our work attempts to transfer normally played music into off-pitch recorder music, which we call ''failed-style recorder'', and study the results of the conversion. 
+        To carry out this work, we have also proposed a dataset of failed-style recorders for this task, called ''FR109 Dataset''.
+        Such an experiment explores the music style transfer task in a more expressive setting, as the generated audio should sound like an ''off-pitch recorder'' while maintaining a certain degree of naturalness.
+        <p></p>
+    </div>
+
+    <p>
+        For more details of our work, please refer to the
+        <a href="">paper</a>.<br />
+    </p>
+
+    <p class="dataset">
+        <h2>FR109 Dataset</h2>
+        Our ''FR109 Dataset'' is avaliable for downloading, you can find more information in
+        <a href="">FR109 Dataset's zenodo page</a>.<br />
+    </p>
+
+    <p>&nbsp;</p>
+
+    <div>
+        <a name="v2r">
+            <h2>Violin to Recorder</h2>
+        </a>
+        <hr />
+        <table><thead>
+            <tr class="row1">
+              <th></th>
+              <th>Origin</th>
+              <th>VAE-GAN</th>
+              <th>StarGAN</th>
+              <th>DDSP</th>
+            </tr></thead>
+          <tbody>
+            <tr>
+              <td>Sample 1</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/violin/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/v2r/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/v2r/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/v2r/01.wav"></audio></td>
+            </tr>
+            <tr>
+              <td>Sample 2</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/violin/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/v2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/v2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/v2r/02.wav"></audio></td>
+            </tr>
+            <tr>
+              <td>Sample 3</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/violin/03.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/v2r/03.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/v2r/03.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/v2r/03.wav"></audio></td>
+            </tr>
+          </tbody>
+          </table>
+    </div>
+    <br /><br />
+    <div>
+        <a name="c2r">
+            <h2>Clarinet to Recorder</h2>
+        </a>
+        <hr />
+        <table><thead>
+            <tr class="row1">
+              <th></th>
+              <th>Origin</th>
+              <th>VAE-GAN</th>
+              <th>StarGAN</th>
+              <th>DDSP</th>
+            </tr></thead>
+          <tbody>
+            <tr>
+              <td>Sample 1</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/clarinet/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/c2r/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/c2r/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/c2r/01.wav"></audio></td>
+            </tr>
+            <tr>
+              <td>Sample 2</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/clarinet/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/c2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/c2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/c2r/02.wav"></audio></td>
+            </tr>
+            <tr>
+              <td>Sample 3</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/clarinet/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/c2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/c2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/c2r/02.wav"></audio></td>
+            </tr>
+          </tbody>
+          </table>
+        
+    </div>
+    <br /><br />
+    <div>
+        <a name="s2r">
+            <h2>Saxophone to Recorder</h2>
+        </a>
+        <hr />
+        <table><thead>
+            <tr class="row1">
+              <th></th>
+              <th>Origin</th>
+              <th>VAE-GAN</th>
+              <th>StarGAN</th>
+              <th>DDSP</th>
+            </tr></thead>
+          <tbody>
+            <tr>
+              <td>Sample 1</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/saxophone/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/s2r/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/s2r/01.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/s2r/01.wav"></audio></td>
+            </tr>
+            <tr>
+              <td>Sample 2</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/saxophone/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/s2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/s2r/02.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/s2r/02.wav"></audio></td>
+            </tr>
+            <tr>
+              <td>Sample 3</td>
+              <td><audio controls="" preload="none"><source src="samples/origin/saxophone/03.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/vaegan/s2r/03.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/stargan/s2r/03.wav"></audio></td>
+              <td><audio controls="" preload="none"><source src="samples/ddsp/s2r/03.wav"></audio></td>
+            </tr>
+          </tbody>
+          </table>
+        
+    </div>
+    <br /><br />
+</body>
+
+</html>
